@@ -1,0 +1,68 @@
+.books-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.books-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding: 3rem 2rem;
+}
+
+.books-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.books-description {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.books-grid {
+  margin-bottom: 3rem;
+}
+
+.book-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.book-card-title {
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.book-card-description {
+  flex-grow: 1;
+}
+
+.books-footer {
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .books-page {
+    padding: 1rem;
+  }
+  
+  .books-header {
+    padding: 2rem 1rem;
+  }
+  
+  .books-title {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .books-header {
+    padding: 1.5rem 1rem;
+  }
+} 
