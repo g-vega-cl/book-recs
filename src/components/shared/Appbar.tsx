@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { AppBar, Toolbar, Button, Box } from '@mui/material';
-import { Home, LibraryBooks } from '@mui/icons-material';
+import { Home, LibraryBooks, AccountTree } from '@mui/icons-material';
 
 function Appbar() {
   return (
@@ -22,6 +22,14 @@ function Appbar() {
             sx={{ color: 'text.primary' }}
           >
             Books
+          </Button>
+          <Button
+            component={Link}
+            to="/diagram"
+            startIcon={<AccountTree />}
+            sx={{ color: 'text.primary' }}
+          >
+            Diagram
           </Button>
         </Box>
       </Toolbar>
