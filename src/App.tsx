@@ -15,8 +15,8 @@ function App() {
         <Appbar />
 
         <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/books" element={<BooksPage />} />
+          {/* <Route path="/" element={<HomePage />} /> */}
+          {/* <Route path="/books" element={<BooksPage />} /> */}
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </BrowserRouter>
