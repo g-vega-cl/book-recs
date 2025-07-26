@@ -72,14 +72,14 @@ export default function DiagramPage() {
             
             PowerQ -->|Politics| BookDH[The Dictators Handbook]
             PowerQ -->|Global systems| BookPW[Principles for Dealing with the Changing World Order]
-            PowerQ -->|Authoritarianism| BookDH[The Authoritarians]
+            PowerQ -->|Authoritarianism| BookTH[The Authoritarians]
             
             %% Style definitions matching original
             classDef bookNode fill:#4a9eff,stroke:#2d7dd2,stroke-width:2px,color:#fff
             classDef questionNode fill:#ff9f40,stroke:#ff7700,stroke-width:2px,color:#fff
             classDef startNode fill:#52c41a,stroke:#389e0d,stroke-width:2px,color:#fff
             
-            class BookHG,BookSB,BookLR,BookTC,BookR,BookHP,BookAH,BookDS,BookSS,BookAR,BookZ,BookF,BookPr,BookDH,BookPW,BookCB,BookPP bookNode
+            class BookHG,BookSB,BookLR,BookTC,BookR,BookHP,BookAH,BookDS,BookSS,BookAR,BookZ,BookF,BookPr,BookDH,BookPW,BookCB,BookPP,BookTH bookNode
             class MainQ,FicQ,LightQ,NonFicQ,PhilQ,LangQ,EssayQ,WorldQ,EconQ,PowerQ questionNode
             class Start startNode
         `;
