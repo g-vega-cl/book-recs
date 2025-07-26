@@ -7,7 +7,7 @@ import {
   Divider
 } from '@mui/material';
 import { ArrowBack, Refresh, MenuBook, Casino } from '@mui/icons-material';
-import { Book } from '../../data/books';
+import type { Book } from '../../data/books';
 import './BookRecommendation.css';
 
 interface BookRecommendationProps {

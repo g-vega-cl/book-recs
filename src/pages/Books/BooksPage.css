@@ -23,6 +23,9 @@
 }
 
 .books-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
   margin-bottom: 3rem;
 }
 
@@ -59,10 +62,19 @@
   .books-title {
     font-size: 2.2rem;
   }
+  
+  .books-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
 }
 
 @media (max-width: 480px) {
   .books-header {
     padding: 1.5rem 1rem;
+  }
+  
+  .books-grid {
+    gap: 1rem;
   }
 } 

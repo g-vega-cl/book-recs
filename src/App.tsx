@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import { ThemeProvider, CssBaseline } from '@mui/material';
-import { AppBar, Toolbar, Typography, Button, Box } from '@mui/material';
+import { AppBar, Toolbar, Button, Box } from '@mui/material';
 import { Home, LibraryBooks } from '@mui/icons-material';
 import { theme } from './styles/shared/theme';
 import HomePage from './pages/Home/HomePage';

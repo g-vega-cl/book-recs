@@ -2,7 +2,6 @@ import {
   Box, 
   Typography, 
   Paper, 
-  Grid, 
   Card, 
   CardContent,
   Link as MuiLink
@@ -28,23 +27,21 @@ export default function BooksPage() {
         </Typography>
       </Paper>
       
-      <Grid container spacing={3} className="books-grid">
+      <Box className="books-grid">
         {bookList.map((book, index) => (
-          <Grid item xs={12} sm={6} md={4} key={index}>
-            <Card className="book-card">
-              <CardContent>
-                <Typography variant="h6" component="h3" className="book-card-title" gutterBottom>
-                  {book.title}
-                </Typography>
-                <Typography variant="body2" className="book-card-description">
-                  {book.description.split('\n\n')[0]}
-                  {book.description.split('\n\n').length > 1 && '...'}
-                </Typography>
-              </CardContent>
-            </Card>
-          </Grid>
+          <Card className="book-card" key={index}>
+            <CardContent>
+              <Typography variant="h6" component="h3" className="book-card-title" gutterBottom>
+                {book.title}
+              </Typography>
+              <Typography variant="body2" className="book-card-description">
+                {book.description.split('\n\n')[0]}
+                {book.description.split('\n\n').length > 1 && '...'}
+              </Typography>
+            </CardContent>
+          </Card>
         ))}
-      </Grid>
+      </Box>
       
       <Paper className="books-footer" elevation={0}>
         <Typography variant="body1" textAlign="center">
